@@ -10,7 +10,7 @@ if __name__ == '__main__':
         opcao = int(input("Opção: "))
 
         if opcao == 1:
-             print('opção somar')
+             print('Opção somar')
         elif opcao == 2:
              print('Opção Subtração')
              
