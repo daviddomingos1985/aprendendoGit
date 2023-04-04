@@ -1,3 +1,5 @@
+from calculadora.operacoes_simlples import somar
+
 if __name__ == '__main__':
     opcao = -1
     while opcao != 3:
@@ -10,7 +12,12 @@ if __name__ == '__main__':
         opcao = int(input("Opção: "))
 
         if opcao == 1:
-             print('Opção somar')
+             operador1 = int(input("Digite o numero que deseja somar: "))
+             operador2 = int(input("Digite outro numero para concluir a soma: "))
+             somar(operador1, operador2)
+             resultado = somar(operador1, operador2)
+             print(f'Soma: {resultado}')
+             print()
         elif opcao == 2:
              print('Opção Subtração')
              
