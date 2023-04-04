@@ -1,4 +1,4 @@
-from calculadora.operacoes_simlples import somar
+from calculadora.operacoes_simlples import somar, subtracao
 
 if __name__ == '__main__':
     opcao = -1
@@ -19,7 +19,13 @@ if __name__ == '__main__':
              print(f'Soma: {resultado}')
              print()
         elif opcao == 2:
-             print('Opção Subtração')
+             operador1 = int(input("Digite o numero que deseja subtrair: "))
+             operador2 = int(input("Digite outro numero para concluir a subtração: "))
+             subtracao(operador1, operador2)
+             resultado = subtracao(operador1, operador2)
+             print(f'Subtração: {resultado}')
+             print()
+             
              
         elif opcao == 3:
              print('Obrigado por usar a nossa calculadora')
